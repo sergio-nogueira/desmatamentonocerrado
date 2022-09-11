@@ -4,8 +4,8 @@ function init(){
 
   const map = new ol.Map({
     view: new ol.View({
-      center: [-50, -13],
-      zoom: 5.6,
+      center: [-50, -13.5],
+      zoom: 5.2,
       projection: 'EPSG:4326',
       }),
     layers: [
@@ -14,7 +14,7 @@ function init(){
         visible: true
       })
     ],
-    target: "js-map",
+    target: "js-map-desmatamento",
   })
 
   // Dados espacializados por municipio
@@ -22,7 +22,7 @@ function init(){
     source: new ol.source.TileWMS({
       url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3APotCropLat',
       }),
-      visible: true,
+      visible: false,
       title: 'PotCropLat'
   })
 
@@ -94,7 +94,7 @@ function init(){
     source: new ol.source.TileWMS({
       url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3AD16a20',
       }),
-      visible: false,
+      visible: true,
       title: 'D16a20'
   })
   
@@ -142,7 +142,7 @@ function init(){
     steps: 4,
     text: false
   })
-  map.addControl(scaleLineControl);
+  //map.addControl(scaleLineControl);
 
 
 
