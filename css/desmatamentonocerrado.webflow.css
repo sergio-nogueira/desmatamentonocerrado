@@ -286,8 +286,11 @@ body {
 
 .container-2 {
   position: static;
-  margin: -13px auto 0px 0px;
+  margin: -6px auto 0px 0px;
+  padding-top: 0px;
   padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 14px;
 }
 
 .menu-button-2 {
@@ -1436,6 +1439,95 @@ body {
 
 .columns-4 {
   margin: 16px 0px 0px;
+}
+
+.text-block-20 {
+  font-size: 20px;
+}
+
+.text-block-21 {
+  font-size: 20px;
+}
+
+.text-block-22 {
+  font-size: 20px;
+}
+
+.tabs-menu-5 {
+  display: block;
+  margin-top: 10px;
+  background-color: #c7aa8b;
+}
+
+.mapa {
+  border: 1px none #000;
+}
+
+.mapa-js {
+  min-height: 800px;
+}
+
+.side-js {
+  min-height: 800px;
+  border-left: 1px none #000;
+  background-color: #e2cfbb;
+}
+
+.tab-link-tab-1-4 {
+  display: inline-block;
+  background-color: transparent;
+}
+
+.tab-link-tab-1-4:hover {
+  background-color: #b1977b;
+}
+
+.tab-link-tab-1-4.w--current {
+  display: inline-block;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #997d5e;
+}
+
+.tab-link-tab-1-4.w--current:hover {
+  background-color: #997d5e;
+}
+
+.tab-link-tab-2-5 {
+  background-color: transparent;
+}
+
+.tab-link-tab-2-5:hover {
+  background-color: #b1977b;
+}
+
+.tab-link-tab-2-5.w--current {
+  background-color: #997d5e;
+}
+
+.tab-link-tab-2-5.w--current:hover {
+  background-color: #997d5e;
+}
+
+.tab-link-tab-3-4 {
+  background-color: transparent;
+}
+
+.tab-link-tab-3-4:hover {
+  background-color: #b1977b;
+}
+
+.tab-link-tab-3-4.w--current {
+  background-color: #997d5e;
+}
+
+.tab-link-tab-3-4.w--current:hover {
+  background-color: #997d5e;
 }
 
 @media screen and (max-width: 991px) {
