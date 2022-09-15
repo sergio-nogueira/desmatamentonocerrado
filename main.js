@@ -56,7 +56,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const AgicCO = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3AAgicCO',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3AAgicCO',
       }),
       visible: false,
       title: 'AgicCO'
@@ -64,7 +64,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const Restaur = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3ARestaur',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3ARestaur',
       }),
       visible: false,
       title: 'Restaur'
@@ -72,7 +72,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const RPQAAD = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3ARPQAAD',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3ARPQAAD',
       }),
       visible: false,
       title: 'RPQAAD'
@@ -80,7 +80,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const BIO = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3ABIO',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3ABIO',
       }),
       visible: false,
       title: 'BIO'
@@ -88,7 +88,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const DSC = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3ADSC',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3ADSC',
       }),
       visible: false,
       title: 'DSC'
@@ -96,7 +96,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const DVN = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3ADVN',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3ADVN',
       }),
       visible: false,
       title: 'DVN'
@@ -104,7 +104,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const EDB = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3AEDB',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3AEDB',
       }),
       visible: false,
       title: 'EDB'
@@ -112,7 +112,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const D30 = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3AD30',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3AD30',
       }),
       visible: false,
       title: 'D30'
@@ -120,7 +120,7 @@ const PotCropLatFonte = new ol.source.TileWMS({
 
   const D16a20 = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3AD16a20',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3AD16a20',
       }),
       visible: false,
       title: 'D16a20'
@@ -142,10 +142,10 @@ const PotCropLatFonte = new ol.source.TileWMS({
   // UF
   const bi_ce_uf_2021 = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'http://ec2-34-201-126-65.compute-1.amazonaws.com:8080/geoserver/tese/wms?service=WMS&version=1.1.0&request=GetMap&layers=tese%3Abi_ce_uf_2021',
+      url:'http://localhost:8080/geoserver/cerrado/wms?service=WMS&version=1.1.0&request=GetMap&layers=cerrado%3Abi_ce_uf_2021',
       })
   })
-  //map.addLayer(bi_ce_uf_2021);
+  map.addLayer(bi_ce_uf_2021);
 
   const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]')
   for(let baseLayerElement of baseLayerElements){
