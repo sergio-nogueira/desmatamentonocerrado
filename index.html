@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Sep 15 2022 21:17:00 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Sep 25 2022 20:02:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="63110b4a9b5249b95a28b5c5" data-wf-site="63110b4a9b5249b39028b5c6">
 <head>
   <meta charset="utf-8">
@@ -117,31 +117,46 @@
         <div class="side-col w-col w-col-4">
           <div class="side">
             <div class="side-texto">
-              <div class="div-block-3">
+              <div class="div-camadas">
                 <div id="camadas" class="camadas">
-                <font size='4'><b>Desmatamento</b></font><p></p>
+                <font size='4'><b>Dados gerais</b></font><p></p>
+                <font size='3'><b>Desmatamento</b></font><p></p>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="d2020"> Área desmatada (2020)<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="D16a20"> Projeção de área desmatada (2020-2030)<br>
+                <p></p><font size='3'><b>Riscos</b></font><p></p>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="RPQAADpix"> Risco de Perda da Qualidade Ambiental Associado ao Desmatamento (RPQAAD)<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="ce_dsca_gpm_2001_2019_median_100m"> Dias secos consecutivos<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="declividade"> Declividade<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="bi_ce_erodibilidade"> Erodibilidade<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="bi_ce_areas_prioritarias"> Áreas Prioritárias para Conservação da Biodiversidade<p></p>
+                <font size='3'><b>Oportunidades</b></font><p></p>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="pastagem_prioridade"> Pastagem (prioridades)<br>
+                &nbsp;<input type="radio" name="baseLayerRadioButton" value="custo_de_oportunidade"> Custo de oportunidade<br>
+                <p></p><font size='4'><b>Dados municipais</b></font><p></p>
+                <font size='3'><b>Desmatamento</b></font><p></p>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="D16a20" checked> Área desmatada (2016-2020)<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="D30"> Estimativa de área desmatada (2020-2030)<p></p>
-                <font size='4'><b>Riscos</b></font><p></p>
+                <font size='3'><b>Riscos</b></font><p></p>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="RPQAAD"> Risco de Perda da Qualidade Ambiental Associado ao Desmatamento (RPQAAD)<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="DSC"> Dias secos consecutivos<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="DVN"> Declividade em vegetação nativa<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="EDB"> Erodibilidade<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="BIO"> Biodiversidade<p></p>
-                <font size='4'><b>Oportunidades</b></font><p></p>
+                <font size='3'><b>Oportunidades</b></font><p></p>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="PotCropLat"> Expansão agrícola (projeção)<br>
-                &nbsp;<input type="radio" name="baseLayerRadioButton" value="pastagem"> Pastagem (projeção)<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="Restaur"> Restauração (projeção)<br>
                 &nbsp;<input type="radio" name="baseLayerRadioButton" value="AgicCO"> Custo de oportunidade<br>
-                &nbsp;<input type="radio" name="baseLayerRadioButton" value="lotbov2018"> Lotação bovina (em 2018)<br>
-                &nbsp;<input type="radio" name="baseLayerRadioButton" value="lotbovfinal"> Lotação bovina (projeção)<br>  
                 </div>
               </div>
-              <div class="div-block-4">
-                <div id="legenda" class="legenda">
-                  <div id="detalhes">
-                    <font size='4'><b><center>Clique sobre um município</center></b></font><p></p>                    
+              <div class="div-dados">
+                <div id="dados" class="dados">
+                  <font size='4'><b><p align="Left">Clique sobre um município</center></b></font></p>    
                 </div>
+              </div>
+              <div class="div-legenda">
+                <div id="legenda" class="legenda">  
+                  <p align='left'><b><font size=4>Legenda</b></font></center></p>
+      <img src='http://localhost:8080/geoserver/cerrado/wms?Service=WMS&REQUEST=GetLegendGraphic&VERSION=1.1.0&FORMAT=image/png&WIDTH=25&HEIGHT=20&labelMargin=2&LAYER=cerrado:D16a20'></img>`                
                 </div>
               </div>
             </div>
